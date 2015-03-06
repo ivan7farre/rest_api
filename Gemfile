@@ -1,10 +1,16 @@
 source 'https://rubygems.org'
 
+# rails specific capistrano funcitons
+gem 'capistrano-rails', '~> 1.1.0'
+# integrate bundler with capistrano
+gem 'capistrano-bundler'
+# if you are using RBENV
+gem 'capistrano-rbenv', "~> 2.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use msyql as the database for Active Record
+gem 'mysql2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
